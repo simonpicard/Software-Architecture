@@ -1,0 +1,275 @@
+1 Introduction
+    Programming vs Software Engineering
+    Handling Complexity
+    Handling Costs
+    Reuse
+    Software Architecture
+        Drawings
+        Importance
+        Components
+        structures
+            Model
+            Component and connector
+            Allocation
+        View
+            Logical
+            Process
+            Development
+            Physical
+            Scenarios
+        OO Design Principles
+            OO programing
+            Coupling
+                Content
+                Common
+                External
+                Control
+                Stamp
+                Data
+                Message
+                None
+            Cohesion
+                Coincidental
+                Logical
+                Temporal
+                Procedural
+                Communicational
+                Sequential
+                Functional
+                ADT
+            Design Patterns
+                Elements
+                    Name    
+                    Probelm
+                    Solution
+                    Consequences
+                Purpose
+                    Strucutral
+                    Creational
+                    Behavioral
+                Scope
+                    Class
+                    Object
+                Observer
+                    Subject
+                    Observer
+                    ConcerteSubject
+                    ConcreteObserver
+        Software Quality and Architecture
+            Functional Requirements
+            Design Constraints
+            Quality Attributes
+            Quality Properties
+            Tactics
+            
+2 Architectural Styles and Patterns
+    Architectural views
+        Layers
+        Indirection layers
+        Pipes and Filters
+        Shared Repository
+        Active Repository
+        Blackboard
+    Adaptation and language extension
+        Microkernel
+        Reflection
+        Interceptor
+        Interpreter
+        Virtual Machine
+        Rule-based System
+    User interaction
+        Model View Control
+        Presentation Abstract Control
+    Basic component Interaction
+        Explicit Invocation
+        Implicit Invocation
+    Component Interaction and Distribution
+        Client-Server
+        3-tier Client-Server
+        Peer-to-Peer
+        Publish-Subscribe
+        Broker
+
+3 Aspect Oriented Software Development
+    Software Complexity
+        Accidental vs Essential
+    Separation of Concerns
+        Crosscutting Concerns
+            Scattering
+                one concerne to many region
+            Tangling
+                many concern to one region
+        Dominant Decomposition
+            Decomposing one problem makes other problem decomposition not possible
+        Aspectual Decomposition
+            Pointcut : Where
+            Kind : When
+            Advice : What
+            Joinpoint : point where concern may be composed
+                Model : define available joinpoint and their use
+            Symmetric vs Asymetric
+        Multidimensional SoC
+    Design Patterns
+        Observer
+        Composite
+        Flyweight
+        Singleton
+    
+4 CBSD - SOA - AOSD
+    Middleware and Components
+        Component Bases Software Development
+            White box - Black box reuse
+            Interfaces and Context Dependencies
+                Syntax
+                Semantic
+                Synchronisation
+                Quality of Service
+            Component Weight
+                Fat - Lean
+            Component Wiring
+                Not component structure: Library, Framework
+                Component structure: plug and play, glue code
+            Middleware
+                component-connector
+                select and wire vs interface mismatches
+        Case: Corba
+        Case: JEE
+        Case: Spring
+    Service Oriented Architecture
+        Service
+            Service registery, Service consumer, Service provider
+            Find, Bind, Execute
+        Web Services
+            SOAP, WSDL, UDDI
+    Aspect Oriented Software Development
+        Aspect
+    Spring AOP
+    
+5 Model Driven Architecture
+    Origin
+    Goal
+        Automation chain
+        PIM to PSM
+        Benefits: Productivity, Portablity, Maintenande and Documentation
+    Concepts
+        Plateform
+            About dependencies
+        Models
+            CIM: 
+            PIM: 
+            PSM: 
+            PM: 
+        Meta-model
+            Meta Object Facility MOF
+            UML in MDA
+                Profile
+    Model Transformation
+        Horizontal - Vertical
+        Endogenous - Exogenous
+        Language
+            ATL
+     
+6 Software Product Lines
+    Origins
+        Mass customisation
+        Mass production
+        System family
+    Goals
+        Reduction of development costs
+        Reduction of time to market
+        Commonality and variability
+    Concepts
+        Software Asset Inputs
+        Feature
+            Feature Model
+            Product decisions
+        Production mechanism
+        Software product ouputs
+    Process
+        SCV analysis
+            Scope
+                Proactive - Reactive
+            Commonalities
+            Variabilities
+        Feature modeling
+        Configuration
+        Derive software product
+            Manual - Atuomatic
+        Binding times
+        Evolution
+            Update paths - Feedback paths
+    MDA & SPL
+
+8 Source-code quality metrics
+    External Quality
+        Conformity, stability
+    Internal Quality
+        Sustainability, Documentation
+    Visualisation
+    Metrics
+        Code
+            SLOC source lines of code
+            WMC Wieghted methods per class
+            DIT Depth of Inheritance Tree
+            NOC Number of Children
+            RFC Reponse for a Class
+        Coupling
+            CBO Coupling between Object Classes
+        Cohesion
+            LCOM4   Lack of Cohesion of Methods
+        Complexity
+            Incidental vs Inherent (Accidental vs Essential)
+            Over-design
+                KISS Keep It Simple Stupid
+            McCabe cyclomatic complexity
+        Interpreting metrics
+            Reflecting reality ?
+            Operations on metrics
+            Context
+            
+9 Source-code quality Software Visualisation
+    Graphic
+    Why : for interpretation
+    Good visualisation
+        Colors
+        Mapping to reality
+        Information density
+        Scalability
+        Interactivity
+    Software visualisation
+        System complixity view
+            System strucutre
+        CodeCity
+            Structure system as a city
+        Blueprint
+            Complexit and cohesion of a class
+        Distribution map
+            Propetries distrubted over the system
+        DSM Design structure matrices
+            Shwo dependance
+    Moose tool suit
+        Mondrian
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
