@@ -3,11 +3,23 @@
     Handling Complexity
     Handling Costs
     Reuse
+    Architectural drivers
+        Stakeholder Needs
+        Business Management Issues
+        Legal/Contractural Issues
+        Commercial/COmpetitve Pressures
+        Technical Environment
+        Political Issues
+        Life Cycle Issues
     Software Architecture
         Drawings
         Importance
+            Common language
+            Earliest set of design decision
+            Re-usable model
         Components
-        structures
+            Divide system in structures and view
+        Structures
             Model
             Component and connector
             Allocation
@@ -21,21 +33,36 @@
             OO programing
             Coupling
                 Content
+                    One module modifies or relies on the internal workings of another module
                 Common
+                    Two modules share the same global data
                 External
+                    two modules share an externally imposed data format
                 Control
+                    One module controlling the flow of another
                 Stamp
+                    When modules share a composite data structure and use only a part of it
                 Data
+                    When modules share data through, for example, parameters
                 Message
+                    Modules use a public interface to exchange parameter- less messages
                 None
             Cohesion
                 Coincidental
+                    modules are grouped arbitrarily
                 Logical
+                    modules are grouped upon their logical kind of use (e.g. grouping math functions)
                 Temporal
+                    modules are grouped by when they are processed
                 Procedural
+                    modules are grouped because they always follow a certain sequence of execution
+                    Temporal + sequential order
                 Communicational
+                    modules are grouped because they operate on the same data
                 Sequential
+                    modules are grouped because the output from one part is the input to another part
                 Functional
+                    modules are grouped because they all contribute to a single well-defined task
                 ADT
             Design Patterns
                 Elements
@@ -57,6 +84,7 @@
             Design Constraints
             Quality Attributes
             Quality Properties
+                Catalogue of property
             Tactics
             
 2 Architectural Styles and Patterns
@@ -174,14 +202,16 @@
         Plateform
             About dependencies
         Models
-            CIM: 
-            PIM: 
-            PSM: 
-            PM: 
+            Computation Independent Model : minimal class diagram
+            Plateform Independant Model : CIM + patterns used
+            Plateform Specific Model : PIM + extended technical definition (all function but generic type)
+            Plateform Model: PSM with type of a specific language
         Meta-model
             Meta Object Facility MOF
             UML in MDA
                 Profile
+                    Stereotype
+                    Constraint
     Model Transformation
         Horizontal - Vertical
         Endogenous - Exogenous
