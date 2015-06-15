@@ -51,10 +51,7 @@
                     Class
                     Object
                 Observer
-                    Subject
-                    Observer
-                    ConcerteSubject
-                    ConcreteObserver
+                    Several observer observe a subject which notify the observers if a change occurs
         Software Quality and Architecture
             Functional Requirements
             Design Constraints
@@ -65,30 +62,51 @@
 2 Architectural Styles and Patterns
     Architectural views
         Layers
+            Divide application in layers, interfaces between, same level of abqstraction and interation within
         Indirection layers
+            Allow acessing to the sub-system where direct access in problematic using wrapper
         Pipes and Filters
+            Divide task, eac subtask is a filter, linked flexibly by pipe, allow parralelsim
         Shared Repository
+            Central data dn client
         Active Repository
+            Shared repository which notify client of usefull change
         Blackboard
+            Divide complex task, then each subtask is computed when new datas arrive, potentially executed by another one. Control component for coordination
     Adaptation and language extension
         Microkernel
+            Allow the support of several versions of a system with a common architecture
         Reflection
+            Store structural and behavioural aspect of the system in meta object, allowing to modify them without modifying the application object which query the meta object
         Interceptor
+            Updates services of framework to handle domain evolving
         Interpreter
         Virtual Machine
         Rule-based System
+            Rule-base
+            Working memory
+            Engine
     User interaction
         Model View Control
         Presentation Abstract Control
+            MVC divided using tree of agents
     Basic component Interaction
         Explicit Invocation
+            Fire and Forget
+            Syn with Server
+            Poll Object
+            Result Callback
         Implicit Invocation
+            Client does not initiate the invocation
     Component Interaction and Distribution
         Client-Server
         3-tier Client-Server
+            Dividing datas and application
         Peer-to-Peer
         Publish-Subscribe
+            Observer like
         Broker
+            communicate through different heterogeneous component, Requestor and Invoker side which have a marshaller to transform the datas
 
 3 Aspect Oriented Software Development
     Software Complexity
@@ -113,6 +131,7 @@
         Observer
         Composite
         Flyweight
+            Represent sequences of same objects with a unique instance per object (ex charactere in a text)
         Singleton
     
 4 CBSD - SOA - AOSD
