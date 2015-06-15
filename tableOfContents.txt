@@ -7,7 +7,7 @@
         Stakeholder Needs
         Business Management Issues
         Legal/Contractural Issues
-        Commercial/COmpetitve Pressures
+        Commercial/Competitve Pressures
         Technical Environment
         Political Issues
         Life Cycle Issues
@@ -90,13 +90,13 @@
 2 Architectural Styles and Patterns
     Architectural views
         Layers
-            Divide application in layers, interfaces between, same level of abqstraction and interation within
+            Divide application in layers, interfaces between, same level of abstraction and interation within
         Indirection layers
-            Allow acessing to the sub-system where direct access in problematic using wrapper
+            Allow acessing to the sub-system where direct access is problematic using wrapper
         Pipes and Filters
-            Divide task, eac subtask is a filter, linked flexibly by pipe, allow parralelsim
+            Divide task, each subtask is a filter, linked flexibly by pipe, allow parralelsim
         Shared Repository
-            Central data dn client
+            Central data for several clients
         Active Repository
             Shared repository which notify client of usefull change
         Blackboard
@@ -163,25 +163,21 @@
         Singleton
     
 4 CBSD - SOA - AOSD
-    Middleware and Components
-        Component Bases Software Development
-            White box - Black box reuse
-            Interfaces and Context Dependencies
-                Syntax
-                Semantic
-                Synchronisation
-                Quality of Service
-            Component Weight
-                Fat - Lean
-            Component Wiring
-                Not component structure: Library, Framework
-                Component structure: plug and play, glue code
-            Middleware
-                component-connector
-                select and wire vs interface mismatches
-        Case: Corba
-        Case: JEE
-        Case: Spring
+    Component Bases Software Development
+        White box - Black box reuse
+        Interfaces and Context Dependencies
+            Syntax
+            Semantic
+            Synchronisation
+            Quality of Service
+        Component Weight
+            Fat - Lean
+        Component Wiring
+            Not component structure: Library, Framework
+            Component structure: plug and play, glue code
+        Middleware
+            component-connector
+            select and wire vs interface mismatches
     Service Oriented Architecture
         Service
             Service registery, Service consumer, Service provider
@@ -259,18 +255,23 @@
         Code
             SLOC source lines of code
             WMC Wieghted methods per class
+                Sum of complexity of all methods in a class
             DIT Depth of Inheritance Tree
             NOC Number of Children
             RFC Reponse for a Class
+                Number of different methods that can be invoked when an instance of a class receives a message
         Coupling
             CBO Coupling between Object Classes
+                # of unique classes to which a class is coupled
         Cohesion
-            LCOM4   Lack of Cohesion of Methods
+            LCOM4 Lack of Cohesion of Methods
+                number of connected sub-graphs
         Complexity
             Incidental vs Inherent (Accidental vs Essential)
             Over-design
                 KISS Keep It Simple Stupid
             McCabe cyclomatic complexity
+                M = E - N + 2P
         Interpreting metrics
             Reflecting reality ?
             Operations on metrics
@@ -295,7 +296,7 @@
         Distribution map
             Propetries distrubted over the system
         DSM Design structure matrices
-            Shwo dependance
+            Show dependance
     Moose tool suit
         Mondrian
 
